@@ -8,7 +8,8 @@
   "scripts": {
     "build": "npm run clean && tsc -p .",
     "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit"
+    "lint": "tsc -p . --noEmit",
+    "prepare": "npm run lint && npm run clean && npm run build"
   },
   "keywords": [
     "nest",
@@ -26,5 +27,8 @@
     "jest": "^28.1.1",
     "ts-jest": "^28.0.4"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
 }
