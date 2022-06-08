@@ -1,9 +1,9 @@
 {
-  "name": "nestjs-firebase",
-  "version": "8.2.3",
+  "name": "@michaellee8/nestjs-firebase",
+  "version": "9.0.0",
   "description": "@nestjs with firebase",
   "license": "MIT",
-  "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-firebase",
+  "homepage": "https://github.com/michaellee8/nestjs-firebase.git",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && tsc -p .",
@@ -21,7 +21,10 @@
   "devDependencies": {
     "@google-cloud/firestore": "5.0.2",
     "@google-cloud/storage": "6.0.1",
-    "@nestjs/testing": "8.4.6"
+    "@nestjs/testing": "8.4.6",
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.4"
   },
   "types": "lib/index.d.ts"
 }

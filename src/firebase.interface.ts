@@ -5,6 +5,7 @@ import { AppOptions } from "firebase-admin";
 
 export type FirebaseModuleOptions = {
   googleApplicationCredential?: string | firebaseAdmin.ServiceAccount;
+  name?: string;
 } & Omit<AppOptions, "credential">;
 
 export type FirebaseModuleAsyncOptions = {

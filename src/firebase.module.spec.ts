@@ -28,7 +28,7 @@ describe("FirebaseModule", () => {
       }).compile();
 
       const firebase = module.get<FirebaseAdmin>(
-        FirebaseConstants.FIREBASE_TOKEN,
+        FirebaseConstants.FIREBASE_TOKEN
       );
       expect(firebase).toBeDefined();
     });
@@ -46,7 +46,7 @@ describe("FirebaseModule", () => {
         }).compile();
 
         const firebase = module.get<FirebaseAdmin>(
-          FirebaseConstants.FIREBASE_TOKEN,
+          FirebaseConstants.FIREBASE_TOKEN
         );
         expect(firebase).toBeDefined();
       });
@@ -62,7 +62,7 @@ describe("FirebaseModule", () => {
         }).compile();
 
         const firebase = module.get<FirebaseAdmin>(
-          FirebaseConstants.FIREBASE_TOKEN,
+          FirebaseConstants.FIREBASE_TOKEN
         );
         expect(firebase).toBeDefined();
       });
